@@ -13,7 +13,7 @@ export default function NotFound() {
         404
       </span>
       <h2 className="my-2 font-heading text-2xl font-bold">Something&apos;s missing</h2>
-      <p>Sorry, the page you are looking for doesn&apos;t exist or has been moved.</p>
+      <p>Mohon maaf, halaman yang anda cari tidak ditemukan, atau mungkin sudah dipindahkan 🤖.</p>
       <div className="mt-8 flex justify-center gap-2">
         <Button onClick={() => router.back()} variant="default" size="lg">
           Go back

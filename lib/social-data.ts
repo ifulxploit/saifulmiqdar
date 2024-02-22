@@ -3,34 +3,34 @@ import { SocialProfile } from "@/types";
 export const socialProfiles: SocialProfile[] = [
   {
     name: "github",
-    link: "https://github.com/thedevdavid",
+    link: "https://github.com/ifulxploit",
   },
   {
     name: "instagram",
-    link: "https://instagram.com/thedevdavid",
+    link: "https://instagram.com/saiful_mqdr",
   },
   {
     name: "linkedin",
-    link: "https://linkedin.com/in/thedevdavid",
+    link: "https://www.linkedin.com/in/saiful-miqdar-7050511b1/",
   },
   {
-    name: "mastodon",
-    link: "https://mastodon.social/@thedevdavid",
+    name: "facebook",
+    link: "https://www.facebook.com/saiful.miqdar.31",
   },
   {
-    name: "threads",
-    link: "https://threads.net/@thedevdavid",
+    name: "dribbble",
+    link: "https://dribbble.com/saimiq",
   },
   {
-    name: "tiktok",
-    link: "https://tiktok.com/@thedevdavid",
+    name: "pinterest",
+    link: "https://id.pinterest.com/miqdarsaiful/",
   },
   {
-    name: "x",
-    link: "https://twitter.com/thedevdavid",
+    name: "behance",
+    link: "https://www.behance.net/saifulmiqdar7",
   },
   {
     name: "youtube",
-    link: "https://youtube.com/@thedevdavid",
+    link: "https://www.youtube.com/@saifulmiqdar2321",
   },
 ];

@@ -9,8 +9,8 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 
   return (
     <div className="items-center justify-center text-center">
-      <h2 className="font-heading">Something went wrong!</h2>
-      <button onClick={() => reset()}>Try again</button>
+      <h2 className="font-heading">Agak laen memang kutengok!</h2>
+      <button onClick={() => reset()}>Cobalagi</button>
     </div>
   );
 }

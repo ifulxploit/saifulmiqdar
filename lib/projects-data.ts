@@ -1,16 +1,32 @@
 export const projects = [
   {
-    title: "ProductEngineerJobs.co",
-    description: `Job board for product engineers. Built with Next.js, Tailwind CSS, and Airtable.`,
-    href: "https://productengineerjobs.co",
-    mediaSrc: "/project-pejobs.png",
+    title: "Shandy's Portfolio",
+    description: "Personal portfolio showcasing frontend development projects. Built with HTML, CSS, and JavaScript.",
+    href: "https://shandy.freewebhostmost.com/",
+    mediaSrc: "/project-shandy.png",
     mediaType: "image",
   },
   {
-    title: "Developer Digital Garden",
-    description: `An open source blogging (digital gardening) template for developers using Next.js app router, MDX, Contentlayer, Tailwind CSS, @shadcn/ui, Lucide Icons, and more.`,
-    href: "https://github.com/thedevdavid/digital-garden",
-    mediaSrc: "/project-garden.mp4",
-    mediaType: "video",
+    title: "Alvin Setya's Portfolio",
+    description:
+      "Portfolio website displaying frontend development projects. Developed using HTML, CSS, and JavaScript.",
+    href: "https://alvinsetya.freewebhostmost.com/",
+    mediaSrc: "/project-alvinsetya.png",
+    mediaType: "image",
+  },
+  {
+    title: "Zakiya's Portfolio",
+    description: "Portfolio website showcasing frontend development projects. Created with HTML, CSS, and JavaScript.",
+    href: "https://zakiya.freewebhostmost.com/",
+    mediaSrc: "/project-zakiya.png",
+    mediaType: "image",
+  },
+  {
+    title: "Dhoo's Portfolio",
+    description:
+      "Personal portfolio featuring frontend development projects. Developed using HTML, CSS, and JavaScript.",
+    href: "https://dhoo.freewebhostmost.com/",
+    mediaSrc: "/project-dhoo.png",
+    mediaType: "image",
   },
 ];

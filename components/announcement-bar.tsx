@@ -19,8 +19,8 @@ export const AnnouncementBar = ({ children, buttonText, link }: AnnouncementBarP
       <div className="flex items-center justify-center">
         {buttonText && (
           <Button variant="secondary" asChild className="mr-2">
-            <a href={link} target="_blank">
-              {buttonText}
+            <a href="https://saweria.co/ifulxploit" target="_blank">
+              Saweria
             </a>
           </Button>
         )}

@@ -1,100 +1,65 @@
 export const hardware = [
   {
-    title: "MacBook Pro 14” (2021) M1 Pro 1TB (*)",
-    description: `My main machine. I love it. I'm a huge believer of the 14" size. Small enough to travel with and big enough to work on.`,
-    href: "https://amzn.to/42E6Sq9",
+    title: "HP Victus 16” Ryzen 7-5800H (*)",
+    description: `Laptop HP Victus 16” Ryzen 7-5800H merupakan kawan setia yang tak tergantikan dalam perjalanan kreatif dan profesional saya, memberikan kinerja andal dan tahan lama yang memudahkan saya dalam ngoding dan mendisain.`,
+    href: "https://www.hp.com/us-en/shop/pdp/victus-by-hp-laptop-16-e0097nr",
   },
   {
-    title: "iPhone 13 Pro Max 256GB (*)",
-    description: `My main phone. Camera is perfect for YouTube videos.`,
-    href: "https://amzn.to/3JaQgzv",
+    title: "OPPO F5 Youth (*)",
+    description: `My main phone. Handphone ini pemberian almarhum ibu saya 💝.`,
+    href: "https://www.oppo.com/en/smartphones/series-f/f5-youth/",
   },
   {
-    title: "Elgato Wave:3 Microphone (*)",
-    description: `Perfect video and podcast microphone. Easy to use, small enough to travel with.`,
-    href: "https://amzn.to/3J4XMvt",
+    title: "OPPO F11 (*)",
+    description: `Ini adalah handphone peninggalan ibu saya 💕.`,
+    href: "https://www.oppo.com/en/smartphones/series-f/f11/specs/",
   },
   {
-    title: "Apple AirPods Max (*)",
-    description: `Honestly, I hate the price, but I love the headphones. I use them for calls, music, and videos.`,
-    href: "https://amzn.to/3X0PHxM",
+    title: "XIAOMI Pad 5 (*)",
+    description: `Salah satu tablet impian saya untuk mendisain ilustrasi.`,
+    href: "https://www.mi.co.id/id/product/xiaomi-pad-5/",
   },
 ];
 
 export const software = [
   {
-    title: "Fathom Analytics (*)",
-    description: `Privacy friendly analytics. No cookies, no GDPR banners, no tracking. Just simple metrics. Get a free month with this link.`,
-    href: "https://usefathom.com/ref/F6KQFM",
-  },
-  {
-    title: "Linear",
-    description: `The best project management app out there. Believe me.`,
-    href: "https://linear.app",
-  },
-  {
-    title: "Xolo (*)",
-    description: `I run my businesses through Estonian e-Residency provider, Xolo. Simple and easy solution to run a borderless company. Get a free month with this link.`,
-    href: "https://xolo.io/ref/DAVLEV1",
-  },
-  {
-    title: "LunchMoney (*)",
-    description: `Budgeting and money management. Multi-currency, multi-account. Fast, simple, and easy to use. Get 1 month free with this link.`,
-    href: "https://lunchmoney.app/?refer=3lxx87ps",
-  },
-  {
-    title: "Raycast",
-    description: `Productivity on Mac. Completely replaced Spotlight for me.`,
-    href: "https://www.raycast.com/",
-  },
-  {
-    title: "Rize",
-    description: `Tracking and analyzing my time. I use it to see how much time I spend on different projects, and distractions. lol.`,
-    href: "https://rize.io/",
-  },
-  {
-    title: "VSCode",
-    description: `Click here to find my plugins & config`,
-    href: "https://gist.github.com/thedevdavid/c1b69f72a7deb472506ee3cf5f559f81",
-  },
-  {
-    title: "iTerm2 & Oh My Zsh",
-    description: `Click here to find my plugins & config`,
-    href: "https://gist.github.com/thedevdavid/af307fb45d525ffebf38750970f98ed2",
-  },
-  {
-    title: "ActiveCampaign (*)",
-    description: `Newsletter, automations, and PLCs. I'm a big fan of their automations. Get a free month with this link.`,
-    href: "activecampaign.com",
-  },
-  {
-    title: "Substack",
-    description: `My main newsletter platform. I love their editor. But probably will move to to somewhere else soon because of the lack of support and integrations.`,
-    href: "https://substack.com",
-  },
-  {
-    title: "Doppler (*)",
-    description: `Secure .env file storage with cloud integrations. Get a free month with this link.`,
-    href: "https://doppler.com/join?invite=45A76339",
+    title: "VS Code (*)",
+    description: `Teks editor luarbiasa yang sangat berguna`,
+    href: "https://code.visualstudio.com/download",
   },
   {
     title: "Figma",
-    description: `Designs and graphics for my apps and websites. I'm not a designer, but I can make things look good. I think. Maybe. I don't know. You tell me. `,
-    href: "https://figma.com",
+    description: `Tool disain paling simpel dan berguna untuk membuat UI/UX dan yang pasti gratis.`,
+    href: "https://www.figma.com/downloads/",
   },
   {
-    title: "Notion",
-    description: `Permanent docs, organizing my life and my business. Using it as my second brain, journaling, content calendar, etc.`,
-    href: "https://www.notion.so/",
+    title: "Adobe Illustrator (*)",
+    description: `Salahsatu Tool luarbiasa yang saya gunakan untuk membuat logo dan illustrasi`,
+    href: "https://www.adobe.com/id_en/products/illustrator/free-trial-download.html",
   },
   {
-    title: "Cron",
-    description: `The calendar app of my dreams. No questions.`,
-    href: "https://cron.com/",
+    title: "Adobe Photoshop (*)",
+    description: `Ini membatu saya mengedit gambar, membuat resolusi yang tinggi, pokonya ngebantu banget`,
+    href: "https://www.adobe.com/id_en/products/photoshop/landpa.html?gclid=CjwKCAiA8YyuBhBSEiwA5R3-E8WXHUUxt-uli7p-BdjbaJcWx8c5BXwIUXv3Mpt1cea2jeQ1jSnbqRoCRzUQAvD_BwE&sdid=GVTYXXRQ&mv=search&mv2=paidsearch&ef_id=CjwKCAiA8YyuBhBSEiwA5R3-E8WXHUUxt-uli7p-BdjbaJcWx8c5BXwIUXv3Mpt1cea2jeQ1jSnbqRoCRzUQAvD_BwE:G:s&s_kwcid=AL!3085!3!637252431109!e!!g!!adobe%20photoshop!703952628!38400836578&gad_source=1",
   },
   {
-    title: "Setapp (*)",
-    description: `A bunch of apps for a monthly fee. I use it for Xnapper, DevTools, CleanMyMac X, Cleanshot X, and a few others. Get a free month with this link.`,
-    href: "https://go.setapp.com/invite/nrblyx5g",
+    title: "Blender (*)",
+    description: `Software disain 3d yang saya gunakan`,
+    href: "https://www.blender.org/download/",
+  },
+  {
+    title: "Adobe Lightroom (*)",
+    description: `Tool buat ngedit effect andalan saya`,
+    href: "https://www.adobe.com/id_en/products/photoshop-lightroom.html",
+  },
+  {
+    title: "Capcut (*)",
+    description: `Software edit vidio yang ringan hehe`,
+    href: "https://www.capcut.com/my-edit",
+  },
+  {
+    title: "Adobe PremierPro (*)",
+    description: `Buat ngedit juga, cuman biar vidio yg di hasilin lebih edan lagi`,
+    href: "https://www.adobe.com/id_en/products/premiere/free-trial-download.html",
   },
 ];

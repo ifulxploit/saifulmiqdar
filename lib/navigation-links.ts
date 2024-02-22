@@ -6,7 +6,7 @@ const content: ContentNavItem[] = [
   {
     title: "Blog",
     href: "/posts",
-    description: "Blogposts. Mostly about web development. Or chicken fingers",
+    description: "Blogposts. Artikel tentang pemrograman, dan tips trik menarik.",
   },
   {
     title: "Speaking",
@@ -19,9 +19,9 @@ const content: ContentNavItem[] = [
     description: "My YouTube channel where I talk about web development.",
   },
   {
-    title: "Newsletter",
+    title: "Traktir Kopi 🍵",
     href: siteMetadata.newsletterUrl as string,
-    description: "My newsletter about software development",
+    description: "Support dan dukungan anda sangat berarti bagi saya 💕",
   },
   {
     title: "Teaching",
@@ -39,9 +39,13 @@ export const navigationLinks: NavItem[] = [
     title: "Projects",
     href: "/projects",
   },
+  // {
+  //   title: "Uses",
+  //   href: "/uses",
+  // },
   {
-    title: "Uses",
-    href: "/uses",
+    title: "about",
+    href: "/about",
   },
   {
     title: "Now",
