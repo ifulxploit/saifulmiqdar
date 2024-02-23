@@ -1,10 +1,10 @@
 export const projects = [
   {
-    title: "JembutFolio - Tailwind Minimal CSS Personal Portfolio HTML5 Template",
+    title: "JembutFolio",
     description:
       "JembutFolio offers a sleek design and utilizes Tailwind CSS, making it an ideal choice for displaying professional portfolios with style and sophistication.",
     href: "https://github.com/ifulxploit/jembutfolio",
-    mediaSrc: "https://raw.githubusercontent.com/ifulxploit/jembutfolio/main/Screenshot.webp",
+    mediaSrc: "/project/jembutfolio.webp",
     mediaType: "image",
   },
   {
