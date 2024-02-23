@@ -1,0 +1,165 @@
+---
+title: "Mengenal struktur project Nextjs"
+publishedDate: "2024-02-23"
+lastUpdatedDate: "2024-02-23"
+tags:
+  - Nextjs
+description: "Artikel ini memberikan gambaran tentang struktur proyek dari aplikasi Next.js, mencakup top-level folder dan file, file konfigurasi, serta konvensi routing dalam direktori aplikasi dan halaman."
+status: published
+series:
+  order: 2
+  title: Nextjs
+---
+
+# Struktur Proyek Next.js
+
+Artikel ini akan memberikan gambaran tentang struktur proyek dari aplikasi Next.js.
+Ini termasuk top-level file dan folder, file konfigurasi, dan konvensi routing dalam folder app dan pages.
+
+# Top-level folders
+
+Top-level Folder digunakan untuk mengorganisir kode aplikasi dan aset statis Kamu.
+Artinya Kamu bisa gunain folder tersebut buat nyimpen berkas-berkas utama yang menjadi
+bagian dari struktur inti aplikasi Kamu, seperti komponen, utility, pages, dan file statis
+seperti gambar atau file konfigurasi. Dengan cara ini, struktur folder yang tertata rapi akan memudahkan
+developer dan juga memudahkan dalam pemeliharaan projek atau aplikasi Nextjs.
+
+![Segmentasi Rute ke Segmen Path Nextjs](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Ftop-level-folders.png&w=1920&q=75)
+
+- `app`: Router Aplikasi
+- `pages`: Router Halaman
+- `public`: Aset statis yang akan disajikan
+- `src`: Folder sumber aplikasi opsional
+
+# Top-level File
+
+Top-level File digunakan untuk mengkonfigurasi aplikasi Kamu, mengelola dependensi, menjalankan middleware, mengintegrasikan alat pemantauan (monitoring tools), dan mendefinisikan environment variables.
+
+- `next.config.js`: File konfigurasi untuk Next.js
+- `package.json`: Dependensi proyek dan skrip
+- `instrumentation.ts`: File OpenTelemetry dan Instrumentasi
+- `middleware.ts`: Middleware permintaan Next.js
+- `.env`: environment variables.
+- `.env.local`: environment variables lokal
+- `.env.production`: environment variables produksi
+- `.env.development`: environment variables pengembangan (Development)
+- `.eslintrc.json`: File konfigurasi untuk ESLint
+- `.gitignore`: File dan folder Git untuk diabaikan
+- `next-env.d.ts`: File deklarasi TypeScript untuk Next.js
+- `tsconfig.json`: File konfigurasi untuk TypeScript
+- `jsconfig.json`: File konfigurasi untuk JavaScript
+
+# Konvensi Routing app
+
+Berikut adalah konvensi file yang digunakan untuk mendefinisikan rute dan menangani metadata dalam [router aplikasi](https://nextjs.org/docs/app).
+
+## File Routing
+
+- `layout`: Layout
+- `page`: Halaman
+- `loading`: UI Loading
+- `not-found`: UI Not-found
+- `error`: UI error
+- `global-error`: UI Global error
+- `route`: API endpoint
+- `template`: Layout yang Dibuat Ulang
+- `default`: Rute Paralel halaman fallback
+
+## Rute Bersarang (Nested Routes)
+
+- `folder`: Segmentasi Rute (Route segment)
+- `folder/folder`: Segmentasi Rute Bersarang ( Nested route segment)
+
+## Rute Dinamis
+
+- `[folder]`: Segmentasi Rute Dinamis
+- `[...folder]`: Segmentasi Rute Catch-all
+- `[[...folder]]`: Segmentasi Rute Optional catch-all
+
+## Grup Rute dan Folder Private
+
+- `(folder)`: Grup rute tanpa memengaruhi routing
+- `_folder`: Folder opsional dan semua segment anak (child segments) dari routing
+
+## Paralel dan Rute Intercepted
+
+- `@folder`: Slot bernama (Named slot)
+- `(.)folder`: Memotong tingkat yang sama (Intercept same level)
+- `(..)folder`: Memotong satu tingkat di atas (Intercept one level above)
+- `(..)(..)folder`: Memotong dua tingkat di atas (Intercept two levels above)
+- `(...)folder`: Memotong dari root (Intercept from root)
+
+## Konvensi File Metadata
+
+### Ikon Aplikasi (App Icons)
+
+| Nama File  | Ekstensi                      | Deskripsi                           |
+| ---------- | ----------------------------- | ----------------------------------- |
+| favicon    | .ico                          | Berkas Favicon                      |
+| icon       | .ico, .jpg, .jpeg, .png, .svg | Berkas Ikon Aplikasi                |
+| icon       | .js, .ts, .tsx                | Ikon Aplikasi yang Dihasilkan       |
+| apple-icon | .jpg, .jpeg, .png             | Berkas Ikon Aplikasi Apple          |
+| apple-icon | .js, .ts, .tsx                | Ikon Aplikasi Apple yang Dihasilkan |
+
+### Open Graph dan Gambar Twitter
+
+| Nama File       | Ekstensi                | Deskripsi                         |
+| --------------- | ----------------------- | --------------------------------- |
+| opengraph-image | .jpg, .jpeg, .png, .gif | Berkas Gambar Open Graph          |
+| opengraph-image | .js, .ts, .tsx          | Gambar Open Graph yang Dihasilkan |
+| twitter-image   | .jpg, .jpeg, .png, .gif | Berkas Gambar Twitter             |
+| twitter-image   | .js, .ts, .tsx          | Gambar Twitter yang Dihasilkan    |
+
+### SEO
+
+| Nama File | Ekstensi | Deskripsi               |
+| --------- | -------- | ----------------------- |
+| sitemap   | .xml     | file Sitemap            |
+| sitemap   | .js, .ts | Sitemap yang Dihasilkan |
+| robots    | .txt     | file Robots             |
+| robots    | .js, .ts | Robots yang Dihasilkan  |
+
+# Pages Konvensi Routing (`pages` Routing Conventions)
+
+Berikut adalah konvensi file yang digunakan untuk mendefinisikan rute dalam pages router.
+
+## Special Files
+
+| Nama File  | Ekstensi        | Deskripsi            |
+| ---------- | --------------- | -------------------- |
+| \_app      | .js, .jsx, .tsx | Custom App           |
+| \_document | .js, .jsx, .tsx | Custom Document      |
+| \_error    | .js, .jsx, .tsx | Custom halaman Error |
+| 404        | .js, .jsx, .tsx | halaman error 404    |
+| 500        | .js, .jsx, .tsx | halaman error 500    |
+
+## Rute
+
+| Konvensi Folder | Ekstensi        | Deskripsi          |
+| --------------- | --------------- | ------------------ |
+| index           | .js, .jsx, .tsx | Halaman Utama      |
+| folder/index    | .js, .jsx, .tsx | Halaman Bertingkat |
+
+| Konvensi File | Ekstensi        | Deskripsi          |
+| ------------- | --------------- | ------------------ |
+| index         | .js, .jsx, .tsx | Halaman Utama      |
+| file          | .js, .jsx, .tsx | Halaman Bertingkat |
+
+Rute Dinamis
+| Konvensi Folder | Ekstensi | Deskripsi |
+|----------------------------|--------------------|------------------------------|
+| [folder]/index | .js, .jsx, .tsx | Segment Rute Dinamis |
+| [...folder]/index | .js, .jsx, .tsx | Segment Rute Catch-all |
+| [[...folder]]/index | .js, .jsx, .tsx | Segment Rute Optional catch-all|
+
+| Konvensi File | Ekstensi        | Deskripsi                       |
+| ------------- | --------------- | ------------------------------- |
+| [file]        | .js, .jsx, .tsx | Segment Rute Dinamis            |
+| [...file]     | .js, .jsx, .tsx | Segment Rute Catch-all          |
+| [[...file]]   | .js, .jsx, .tsx | Segment Rute Optional catch-all |
+
+Sekian, semoga bermanfaat and thank u 💞
+
+# Referensi
+
+[Documentasi Nextjs : struktur project](https://nextjs.org/docs/getting-started/project-structure)
