@@ -1,9 +1,17 @@
 export const projects = [
   {
+    title: "JembutFolio - Tailwind Minimal CSS Personal Portfolio HTML5 Template",
+    description:
+      "JembutFolio offers a sleek design and utilizes Tailwind CSS, making it an ideal choice for displaying professional portfolios with style and sophistication.",
+    href: "https://github.com/ifulxploit/jembutfolio",
+    mediaSrc: "https://raw.githubusercontent.com/ifulxploit/jembutfolio/main/Screenshot.webp",
+    mediaType: "image",
+  },
+  {
     title: "Shandy's Portfolio",
     description: "Personal portfolio showcasing frontend development projects. Built with HTML, CSS, and JavaScript.",
     href: "https://shandy.freewebhostmost.com/",
-    mediaSrc: "/project-shandy.png",
+    mediaSrc: "/project/project-shandy.webp",
     mediaType: "image",
   },
   {
@@ -11,14 +19,14 @@ export const projects = [
     description:
       "Portfolio website displaying frontend development projects. Developed using HTML, CSS, and JavaScript.",
     href: "https://alvinsetya.freewebhostmost.com/",
-    mediaSrc: "/project-alvinsetya.png",
+    mediaSrc: "/project/project-alvinsetya.webp",
     mediaType: "image",
   },
   {
     title: "Zakiya's Portfolio",
     description: "Portfolio website showcasing frontend development projects. Created with HTML, CSS, and JavaScript.",
     href: "https://zakiya.freewebhostmost.com/",
-    mediaSrc: "/project-zakiya.png",
+    mediaSrc: "/project/project-zakiya.webp",
     mediaType: "image",
   },
   {
@@ -26,7 +34,7 @@ export const projects = [
     description:
       "Personal portfolio featuring frontend development projects. Developed using HTML, CSS, and JavaScript.",
     href: "https://dhoo.freewebhostmost.com/",
-    mediaSrc: "/project-dhoo.png",
+    mediaSrc: "/project/project-dhoo.webp",
     mediaType: "image",
   },
 ];

@@ -1,0 +1,210 @@
+---
+title: "Nextjs cara menginstall nextjs"
+publishedDate: "2024-02-23"
+lastUpdatedDate: "2024-02-23"
+tags:
+  - Nextjs
+description: "Bagaimana cara menginstall Nextjs? Persyaratan sebelum menginstall nextjs, cara mengistall secara manual dan otomatis? stuktur directory nextjs, cara menggunakan page router, page app, dan folder public"
+status: published
+series:
+  order: 1
+  title: Nextjs
+---
+
+Yap, sesuai dengan judulnya, di kesempatan ini kita akan coba menginstall Nextjs sesuai dengan panduan di dokumentasinya.
+let's go bujank... 🚀
+
+# Instalasi
+
+Sebelum kita menginstall Nextjs, ada beberapa persyaratan yang harus dipenuhi :
+
+- [Nodejs dengan versi 18.17](https://nodejs.org/en) atau diatasnya. untuk saat ini tanggal `23 februari 2024` nedejs sudah berada di versi `20.11.1`
+- Untuk sistem operasi, Nextjs sudah mendukung MacOS, Windows (Windows Subsystem for Linux `WSL`) dan Linux. Disini saya menggunakan Windows, biar merakyat.
+
+# Install Secara otomatis
+
+Untuk membuat project Nextjs kamu bisa menggunakan perintah `create-next-app`. Udah diatur otomatis buat kamu, kamu tinggal jalanin aja perintahnya kaya gini :
+
+```
+npx create-next-app@latest
+```
+
+Mari kita bahasa sedikit tentang command tersebut :
+
+- `npx` : Nodej Packet Execute (Semisal kita mau install paket nodejs, tapi kita cuma butuh paket ini sekali doang, nah kita pake npx ini buat jalanin paketnya.)
+- `create-next-app` : nama paket nodejs untuk bikin project nextjs baru
+- `@latest` : Versi paket nya, karna kita nyari versi yang terbaru dan kita gk tau versi terbaru versi berapa, jadi kita pake `latest` kalo misal kalian mau pake versi tertentu kalian tulis aja no versinya, misal `@14.1` jadi `create-next-app@14.1`
+
+Setelah kamu jalanin paketnya, maka nanti bakal muncul pertanyaan ini :
+
+```
+1. What is your project named? my-app
+2. Would you like to use TypeScript? No / Yes
+3. Would you like to use ESLint? No / Yes
+4. Would you like to use Tailwind CSS? No / Yes
+5. Would you like to use `src/` directory? No / Yes
+6. Would you like to use App Router? (recommended) No / Yes
+7. Would you like to customize the default import alias (@/*)? No / Yes
+8. What import alias would you like configured? @/*
+```
+
+Penjelasan singkat :
+
+1. **What is your project named?**: Ini adalah pertanyaan tentang nama proyek Kamu. Kamu bisa ngasih nama apa aja.
+
+2. **Would you like to use TypeScript?**: Ini adalah pertanyaan tentang apakah Kamu ingin menggunakan TypeScript dalam proyek Kamu atau tidak. TypeScript adalah varian dari JavaScript yang memungkinkan Kamu buat nulis kode yang lebih aman dan lebih terstruktur.
+
+3. **Would you like to use ESLint?**: Ini adalah pertanyaan tentang apakah Kamu ingin menggunakan ESLint dalam proyek Kamu atau tidak. ESLint adalah alat yang digunakan buat memeriksa kode JavaScript Kamu terhadap aturan penulisan yang ditentukan. jadi Kamu bisa menghindari kesalahan dan menjaga konsistensi dalam kode Kamu.
+
+4. **Would you like to use Tailwind CSS?**: Ini adalah pertanyaan tentang apakah Kamu ingin menggunakan Tailwind CSS dalam proyek Kamu atau tidak. Tailwind CSS adalah kerangka kerja CSS (framework css) yang memungkinkan Kamu buat ngerancang tampilan situs web dengan cepat menggunakan kelas CSS yang udah ditentuin.
+
+5. **Would you like to use `src/` directory?**: Ini adalah pertanyaan tentang apakah Kamu ingin menggunakan direktori `src/` dalam struktur proyek Kamu atau tidak. Penggunaan `src/` directory umumnya digunakan buat misahin kode aplikasi utama dari file konfigurasi dan kode lainnya.
+
+6. **Would you like to use App Router?**: Ini adalah pertanyaan tentang apakah Kamu ingin menggunakan App Router dalam proyek Kamu atau tidak. App Router adalah alat navigasi yang direkomendasikan oleh Next.js buat mengelola navigasi di aplikasi Kamu.
+
+7. **Would you like to customize the default import alias (@/\*)?**: Ini adalah pertanyaan tentang apakah Kamu ingin menyesuaikan alias impor default (`@/*`) atau tidak. Aliases impor default memungkinkan Kamu buat merujuk ke direktori tertentu dalam proyek Kamu dengan lebih mudah.
+
+8. **What import alias would you like configured?**: Jika Kamu memilih buat menyesuaikan alias impor default, Kamu akan diminta buat memberikan direktori yang pengen Kamu gunakan sebagai alias impor default (`@/*`).
+
+Setelah Kamu menjawab pertanyaan-pertanyaan, `create-next-app` akan membuat sebuah folder dengan nama proyek yang Kamu pilih misal nama proyeknya bernama `my-app` dan menginstal semua hal yang diperlukan untuk proyek itu.
+
+Kalo Kamu baru menggunakan Next.js, lihat [dokumentasi struktur proyek](https://nextjs.org/docs/getting-started/project-structure) biar dapet gambaran tentang file-file atau folder apa saja yg ada di aplikasi Kamu. Ini akan membantu kamu buat memahami struktur folder dan file di project yg kamu buat.
+
+> `Note :`
+> Sekarang, Next.js udah dilengkapi dengan konfigurasi TypeScript, ESLint, dan Tailwind CSS secara default.
+> Kamu bisa memilih buat ngegunain direktori src di root proyek kamu, buat misahin kode aplikasi dari file konfigurasi.
+
+# Install Secara manual
+
+Untuk instalasi secara manual, kamu bisa buat project nextjs baru dengan beberapa paket yang dibutuhin :
+
+```
+npm install next@latest react@latest react-dom@latest
+```
+
+Lalu buka file `package.json` trus tambahin ini di bagian `script` :
+
+```
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  }
+}
+```
+
+Kita jelasin
+
+- `dev`: menjalankan `next dev` untuk memulai Next.js dalam mode pengembangan.
+- `build`: menjalankan `next build` untuk membangun aplikasi untuk penggunaan produksi.
+- `start`: menjalankan `next start` untuk memulai server produksi Next.js.
+- `lint`: menjalankan `next lint` untuk menyiapkan konfigurasi ESLint bawaan Next.js.
+
+## Membuat direktori
+
+Nextjs ini menggunakan penataan rute berbasis sistem file, artinya rute-rute di projek kamu ditentuin sama bagaimana kamu nyusun file-file kamu.
+
+### direktori `app`
+
+Nextjs nyaranin kalo kamu baru buat projek, mending pake App Router.
+dengan itu kamu bisa pake fitur-fitur terbaru dari React, App Router ini hasil perkemabangan dari page router, karena banyak saran dan masukan dari komunitas.
+
+Buat folder `app/`, trus buat file `layout.tsx` dan `page.tsx`. file-file inilah yang bakal di render ketika user ngakses root dari projek kamu `(/)` (Contoh : http://example.site/).
+![Contoh directory](https://nextjs.org/_next/image?url=%2Fdocs%2Fdark%2Fapp-getting-started.png&w=1920&q=75)
+
+Buat sebuah file [root layout](https://nextjs.org/docs/app/building-your-application/routing/pages-and-layouts#root-layout-required) didalam `app/layout.tsx`
+Tata letak ini bakal jadi kerangka dasar dari halaman web Kamu. Di dalamnya, Kamu perlu nambahin tag-tag HTML yang diperlukan,
+Seperti <html> dan <body>, yang merupakan struktur dasar dari sebuah halaman web. contoh :
+_app/layout.tsx_
+
+```
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
+```
+
+Lalu buat sebuah halaman home `app/page.tsx` dengan isi seperti berikut :
+
+```
+export default function Page() {
+  return <h1>Hello, Next.js!</h1>
+}
+```
+
+> _Note :_ Kalo kamu lupa bikin file `layout.tsx`, Nextjs akan otomatis ngebuatin filenya ketika kamu menjalankan programnya di development server / `next dev`
+
+Pelajari lebihlanjut tentang penggunaan [App Router](https://nextjs.org/docs/app/building-your-application/routing/defining-routes)
+
+### Directory `pages` (Opsional)
+
+Kalo kamu lebih suka pake `pages route` di banding `app route` kamu bisa bikin foler `pages/` di root projek kamu.
+Kemudian buat file `index.tsx` didalam folder `pages/` ini akan jadi halaman utama di situs web kamu.
+_pages/index.tsx_
+
+```
+export default function Page() {
+  return <h1>Hello, Next.js!</h1>
+}
+```
+
+Lanjut, buat file `_app.tsx` didalam folder `pages/` untuk mendefinisikan tataletak global dari projek kamu. pelajari lebih lanjut tentang [custom App file](https://nextjs.org/docs/pages/building-your-application/routing/custom-app).
+_pages/\_app.tsx_
+
+```
+import type { AppProps } from 'next/app'
+
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+}
+```
+
+kemudian buat file `_document.tsx` didalam folder `pages/` untuk mengontrol tanggapan awal dari server. File ini bertanggung jawab untuk menyediakan struktur awal dari halaman HTML yang dihasilkan oleh server sebelum diterima oleh browser pengguna.
+pelajarin lagi tentang [custom Document file](https://nextjs.org/docs/pages/building-your-application/routing/custom-document)
+
+_pages/\_document.tsx_
+
+```
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html>
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
+```
+
+Belajar lagi tentang [using the Pages Router](https://nextjs.org/docs/pages/building-your-application/routing/pages-and-layouts)
+
+> _Note :_ Meskipun kamu bisa pake kedua router dalam satu project yang sama. rute-rute dalam direktori `app` akan diprioritaskan daripada rute-rute dalam direktori `pages`. Disarankan kamu cuma pake satu router aja dalam satu projek, biar gak bingung.
+
+### Direktori `public` (opsional):
+
+Buat sebuah folder(Direktori) bernama `public`. disitu kamu nyimpen aset-aset static kaya gambar, font, dll. file-file yang ada di folder `public` ini bisa di akses di root URL / URL dasar (`/`) .
+
+# Jalankan Development server (Server Pengembang)
+
+- Jalankan perintah `npm run dev` untuk memulai server pengembangan.
+- salin url ini di browser (shortcut : `ctrl + klik kiri`) http://localhost:3000 untuk melihat projek Kamu.
+- Edit file app/page.tsx (atau pages/index.tsx) dan simpan untuk lihat hasil yang diperbarui di browser Kamu.
+
+Sekian dan terimakasih 💞
+
+# Referensi
+
+[Dokumentasi instalasi Nextjs](https://nextjs.org/docs/getting-started/installation)
